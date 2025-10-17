@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.google.devtools.ksp' // вместо устаревшего 'kotlin-kapt'
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
 apply plugin: 'dagger.hilt.android.plugin'
 
 android {
@@ -60,7 +60,7 @@ dependencies {
     def mdc_version = "1.12.0"
     def nav_version = "2.9.3"
     def room_version = "2.7.2"
-    def firebase_version = "34.1.0"
+    // def firebase_version = "34.1.0"
     def glide_version = "4.16.0"
     def retrofit_version = "3.0.0"
     def retrofitgson_version = "3.0.0"
@@ -68,7 +68,7 @@ dependencies {
     def coroutines_version = "1.10.2"
     def imagepicker_version = "2.1"
     def paging_version = "3.3.6"
-    def play_services_base_version = "18.7.2"
+    // def play_services_base_version = "18.7.2"
     def core_desugaring_version = "2.1.5"
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -89,9 +89,9 @@ dependencies {
     ksp "androidx.room:room-compiler:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
     implementation "androidx.room:room-paging:$room_version"
-    implementation platform("com.google.firebase:firebase-bom:$firebase_version")
-    implementation "com.google.firebase:firebase-messaging"
-    implementation "com.google.android.gms:play-services-base:$play_services_base_version"
+    // implementation platform("com.google.firebase:firebase-bom:$firebase_version")
+    // implementation "com.google.firebase:firebase-messaging"
+    // implementation "com.google.android.gms:play-services-base:$play_services_base_version"
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitgson_version"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttplogging_version"
